@@ -71,7 +71,7 @@ function DesktopNavbar() {
             ))}
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <ThemeSwitcherBtn />
           <UserButton afterSwitchSessionUrl="/sign-in" />
         </div>
@@ -91,7 +91,7 @@ function NavbarItem({ label, link, onClick }: { label: string; link: string, onC
         className={cn(
           buttonVariants({ variant: 'ghost' }),
           `w-full justify-start text-lg text-muted-foreground hover:text-foreground px-4 py-2 ${
-            isActive ? 'text-white' : 'text-gray-700'
+            isActive ? 'text-dark' : 'text-gray-700'
           }`
         )}
         onClick={() => {
